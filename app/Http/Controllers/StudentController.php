@@ -8,7 +8,7 @@ class StudentController extends Controller
 {
     public function index()
     {
-    	$service = new \App\Services\Student\StudentListService();
+    	$service = new \App\Services\StudentService();
         return  $service->list();
     }
 }
